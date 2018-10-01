@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Tableros</title>
+	<style>
+			h1,h2 {text-align:center}
+			table#pr, th#pr, td#pr {border: 1px solid black; text-align:center; width:20%; }
+			td#prred { background-color: red}
+			td#prblue {background-color: blue}
+			td#pryellow { background-color: orange}
+			
+			table#se, th#se, td#se {text-align:center; width:20%; }
+			td#red { background-color: red }
+			td#blue {background-color: blue}
+			td#yellow { background-color: orange}
+			
+			form {padding:center}
+	</style>
+</head>
+<body>
+	<h1>Tableros de juego</h1>
+	
+	<table align=center id="pr">
+		<thead>
+			<h2>Tableros con menús de selección</h2>
+		</thead>
+		<tbody>
+		      <tr id="pr">
+		      	<td id="pr"></td>
+			    <th id="pr">A</th>
+			    <th id="pr">B</th>
+			    <th id="pr">C</th>
+			    <th id="pr">D</th>
+			  </tr>
+			  <tr>
+			  	<th id="pr">1</th>
+			  	<td id="prblue"></td>
+			  	<td id="pr"></td>
+			  	<td id="pr"></td>
+			  	<td id="pr"></td>
+			  </tr>
+			  <tr>
+			  	<th id="pr">2</th>
+			  	<td id="pr"></td>
+			  	<td id="prred"></td>
+			  	<td id="pr"></td>
+			  	<td id="pr"></td>
+		      </tr>
+		      <tr>
+			  	<th id="pr">3</th>
+			  	<td id="pr"></td>
+			  	<td id="prred"></td>
+			  	<td id="pr"></td>
+			  	<td id="pr"></td>
+			  </tr>
+			  <tr>
+			  	<th id="pr">4</th>
+			  	<td id="pr"></td>
+			  	<td id="pr"></td>
+			  	<td id="pr"></td>
+			  	<td id="pryellow"></td>
+		      </tr>
+		  </tbody>
+	</table>
+	<form action="">
+		<select name="columna">
+   	 		<option value="1">1</option>
+    			<option value="2">2</option>
+   			<option value="3">3</option>
+   			<option value="4">4</option>
+  		</select>
+		<select name="fila">
+   	 		<option value="a">A</option>
+    			<option value="b">B</option>
+   			<option value="c">C</option>
+   			<option value="d">D</option>
+  		</select>
+		<input type="submit" value ="Enviar">
+	</form>
+	
+	
+	<table align=center id="se">
+		<thead>
+			<h2>Tableros con botones en las casillas</h2>
+		</thead>
+		<tbody>
+			<form action="">
+		      <tr>
+		      	<td id="se"></td>
+			    <th id="se">A</th>
+			    <th id="se">B</th>
+			    <th id="se">C</th>
+			    <th id="se">D</th>
+			  </tr>
+			  <tr>
+			  	<th id="se">1</th>
+			  	<td id="blue"><input type="radio" name="posicion" value="A1"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="B1"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="C1"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="D1"></td>
+			  </tr>
+			  <tr>
+			  	<th id="se">2</th>
+			  	<td id="se"><input type="radio" name="posicion" value="A2"></td>
+			  	<td id="red"><input type="radio" name="posicion" value="B2"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="C2"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="D2"></td>
+		      </tr>
+		      <tr>
+			  	<th id="se">3</th>
+			  	<td id="se"><input type="radio" name="posicion" value="A3"></td>
+			  	<td id="red"><input type="radio" name="posicion" value="B3"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="C3"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="D3"></td>
+			  </tr>
+			  <tr>
+			  	<th id="se">4</th>
+			  	<td id="se"><input type="radio" name="posicion" value="A4"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="B4"></td>
+			  	<td id="se"><input type="radio" name="posicion" value="C4"></td>
+			  	<td id="yellow"><input type="radio" name="posicion" value="D4"></td>
+		      </tr>
+		      <tr>
+			  	<th id="se"></th>
+			  	<td id="se"></td>
+			  	<td id="se"><input type="submit" name="enviar" value="Enviar"></td>
+			  	<td id="se"></td>
+			  	<td id="se"></td>
+		      </tr>
+			</form>
+		</tbody>
+	</table>
+
+</body>
+</html>
