@@ -4,59 +4,85 @@
 <meta charset="ISO-8859-1">
 <title>Registro</title>
 <style>
+body {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 legend {
 	color: blue;
 	font-weight: 600;
 	font-size: 150%;
 }
 
-label {
+th, td {
+	text-align: left;
+	font-weight: normal;
+}
+
+/* label {
 	display: inline-block;
 	width: 140px;
-}
+} */
 </style>
 </head>
 <body>
 	<form>
 		<fieldset>
 			<legend> Registro de jugadores de "Hundir la flota" </legend>
-			<div class="form-group">
-				<label>Nombre(*)</label> <input type="text" name="name" required><br>
-			</div>
-			<div class="form-group">
-				<label>Primer apellido(*):</label> <input type="text"
-					name="lastname" required><br>
-			</div>
-			<div class="form-group">
-				<label>Segundo apellido:</label> <input type="text" name="lastname2"><br>
-			</div>
-			<div class="form-group">
-				<label>DNI(*):</label> <input type="text" name="dni" required><br>
-			</div>
-			<div class="form-group">
-				<label>Email:</label> <input type="email" name="email"><br>
-			</div>
-			<div class="form-group">
-				<label>Tipo de pago(*):</label> <input type="radio" name="payment"
-					value="Contrareembolso" required> Contrareembolso <input
-					type="radio" name="payment" value="visa" required> Tarjeta
-				VISA <input type="radio" name="payment" value="cheque" required>Cheque<br>
-			</div>
-			<div class="form-group">
-				<label>Contraseña(*):</label> <input type="password" name="pwd"
-					required><br>
-			</div>
-			<div class="form-group">
-				<label>Repita contraseña(*):</label> <input type="password"
-					name="pwd2" required><br>
-			</div>
-			<div class="form-group">
-				<input type="submit" value="Enviar Datos">
-				<label style="width:45px"></label>
-			<input type="reset" value="Borrar Datos">
-</div>
+			<table>
+				<tr>
+					<th>Nombre(*):</th>
+					<th><input type="text" name="nombre" required></th>
+				</tr>
+				<tr>
+					<th>Primer apellido(*):</th>
+					<th><input type="text" name="surname" required></th>
+				</tr>
+				<tr>
+					<th>Segundo apellido:</th>
+					<th><input type="text" name="lastname2"></th>
+				</tr>
+				<tr>
+					<th>DNI(*):</th>
+					<th><input type="text" name="dni" required></th>
+				</tr>
+				<tr>
+					<th>Email:</th>
+					<th><input type="email" name="email"></th>
+				</tr>
+				<tr>
+					<th>Tipo de pago(*):</th>
+					<th><input type="radio" name="payment" value="Contrareembolso"
+						required> Contrareembolso <input type="radio"
+						name="payment" value="visa" required> Tarjeta VISA <input
+						type="radio" name="payment" value="cheque" required>Cheque</th>
+				</tr>
+				<tr>
+					<th>Contraseña(*):</th>
+					<th><input type="password" name="pwd" required></th>
+				</tr>
+				<tr>
+					<th>Repita contraseña(*):</th>
+					<th><input type="password" name="pwd2" required></th>
+				</tr>
+				<tr>
+					<th><input type="submit" value="Enviar Datos"></th>
+					<th><input type="reset" value="Borrar Datos"></th>
+				</tr>
+			</table>
+
 		</fieldset>
 	</form>
+
+
+
+
+
+
+
+
 	(*)Los campos con asterisco son obligatorios.
 </body>
 </html>
