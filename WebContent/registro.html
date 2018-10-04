@@ -12,8 +12,8 @@ body {
 
 legend {
 	color: blue;
-	font-weight: 600;
 	font-size: 150%;
+	font-weight: bold;
 }
 
 th, td {
@@ -21,10 +21,9 @@ th, td {
 	font-weight: normal;
 }
 
-/* label {
-	display: inline-block;
-	width: 140px;
-} */
+fieldset {
+	border: 1px solid black;
+}
 </style>
 </head>
 <body>
@@ -33,11 +32,11 @@ th, td {
 			<legend> Registro de jugadores de "Hundir la flota" </legend>
 			<table>
 				<tr>
-					<th>Nombre(*):</th>
+					<th>Nombre (*):</th>
 					<th><input type="text" name="nombre" required></th>
 				</tr>
 				<tr>
-					<th>Primer apellido(*):</th>
+					<th>Primer apellido (*):</th>
 					<th><input type="text" name="surname" required></th>
 				</tr>
 				<tr>
@@ -45,7 +44,7 @@ th, td {
 					<th><input type="text" name="lastname2"></th>
 				</tr>
 				<tr>
-					<th>DNI(*):</th>
+					<th>DNI (*):</th>
 					<th><input type="text" name="dni" required></th>
 				</tr>
 				<tr>
@@ -53,18 +52,18 @@ th, td {
 					<th><input type="email" name="email"></th>
 				</tr>
 				<tr>
-					<th>Tipo de pago(*):</th>
+					<th>Tipo de pago (*):</th>
 					<th><input type="radio" name="payment" value="Contrareembolso"
 						required> Contrareembolso <input type="radio"
 						name="payment" value="visa" required> Tarjeta VISA <input
 						type="radio" name="payment" value="cheque" required>Cheque</th>
 				</tr>
 				<tr>
-					<th>Contraseña(*):</th>
+					<th>Contraseña (*):</th>
 					<th><input type="password" name="pwd" required></th>
 				</tr>
 				<tr>
-					<th>Repita contraseña(*):</th>
+					<th>Repita contraseña (*):</th>
 					<th><input type="password" name="pwd2" required></th>
 				</tr>
 				<tr>
@@ -75,14 +74,6 @@ th, td {
 
 		</fieldset>
 	</form>
-
-
-
-
-
-
-
-
-	(*)Los campos con asterisco son obligatorios.
+	(*) Los campos con asterisco son obligatorios.
 </body>
 </html>
