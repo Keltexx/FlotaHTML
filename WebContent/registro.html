@@ -4,76 +4,76 @@
 <meta charset="ISO-8859-1">
 <title>Registro</title>
 <style>
-body {
+body {                                            /*centra y dimensiona el cuerpo de la web*/
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-legend {
+legend {											/*formatea el "título" del formulario*/
 	color: blue;
 	font-size: 150%;
 	font-weight: bold;
 }
 
-th, td {
-	text-align: left;
-	font-weight: normal;
-}
-
-fieldset {
+fieldset {										/*líneas del formulario*/
 	border: 1px solid black;
 }
 </style>
 </head>
 <body>
-	<form>
-		<fieldset>
-			<legend> Registro de jugadores de "Hundir la flota" </legend>
-			<table>
+<form>																												<!--  inicio el formulario -->
+		<fieldset>																									<!--  formulario estilo "tabla" -->
+			<legend> Registro de jugadores de "Hundir la flota" </legend>  <!--  título del formulario estilo dentro de las lineas de la "tabla" -->
+			
+			<table>																									<!--  creo tabla para alinear los elementos del formulario, 
+																																	nada que ver con el fieldset,
+																																	<tr> crea filas y <td> columnas para cada fila,
+																																	añado el texto y el input correspondiente al formulario
+																																	el campo required de los input son la función de (*)	-->
 				<tr>
-					<th>Nombre (*):</th>
-					<th><input type="text" name="nombre" required></th>
+					<td>Nombre (*):</td>
+					<td><input type="text" name="nombre" required></td>
 				</tr>
 				<tr>
-					<th>Primer apellido (*):</th>
-					<th><input type="text" name="surname" required></th>
+					<td>Primer apellido (*):</td>
+					<td><input type="text" name="surname" required></td>
 				</tr>
 				<tr>
-					<th>Segundo apellido:</th>
-					<th><input type="text" name="lastname2"></th>
+					<td>Segundo apellido:</td>
+					<td><input type="text" name="lastname2"></td>
 				</tr>
 				<tr>
-					<th>DNI (*):</th>
-					<th><input type="text" name="dni" required></th>
+					<td>DNI (*):</td>
+					<td><input type="text" name="dni" required></td>
 				</tr>
 				<tr>
-					<th>Email:</th>
-					<th><input type="email" name="email"></th>
+					<td>Email:</td>
+					<td><input type="email" name="email"></td>
 				</tr>
 				<tr>
-					<th>Tipo de pago (*):</th>
-					<th><input type="radio" name="payment" value="Contrareembolso"
+					<td>Tipo de pago (*):</td>
+					<td><input type="radio" name="payment" value="Contrareembolso"
 						required> Contrareembolso <input type="radio"
 						name="payment" value="visa" required> Tarjeta VISA <input
-						type="radio" name="payment" value="cheque" required>Cheque</th>
+						type="radio" name="payment" value="cheque" required>Cheque</td>
 				</tr>
 				<tr>
-					<th>Contraseña (*):</th>
-					<th><input type="password" name="pwd" required></th>
+					<td>Contraseña (*):</td>
+					<td><input type="password" name="pwd" required></td>
 				</tr>
 				<tr>
-					<th>Repita contraseña (*):</th>
-					<th><input type="password" name="pwd2" required></th>
+					<td>Repita contraseña (*):</td>
+					<td><input type="password" name="pwd2" required></td>
 				</tr>
 				<tr>
-					<th><input type="submit" value="Enviar Datos"></th>
-					<th><input type="reset" value="Borrar Datos"></th>
+					<td><input type="submit" value="Enviar Datos"></td>
+					<td><input type="reset" value="Borrar Datos"></td>
 				</tr>
 			</table>
 
 		</fieldset>
-	</form>
+	</form>																													<!--  fin formulario -->
 	(*) Los campos con asterisco son obligatorios.
 </body>
 </html>
