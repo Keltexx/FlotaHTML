@@ -4,15 +4,15 @@
 <meta charset="ISO-8859-1">
 <title>Tableros</title>
 <style>
-body{
+body{							 /*centra el texto de la web*/
 	text-align:center;
 }
 
-h1, h2 {
+h1, h2 {						/*centra el texto de los encabezados*/
 	text-align: center
 }
 
-table#pr, th#pr, td#pr {
+table#pr, th#pr, td#pr {		/*centra y dimensiona la primera tabla con un borde negro y el texto centrado*/
 	margin-left: auto;
 	margin-right: auto;
 	border: 1px solid black;
@@ -20,48 +20,51 @@ table#pr, th#pr, td#pr {
 	width: 300px;
 }
 
-table#med {
+table#med {						/*dimensiona los botones de enviar de la primera tabla*/
 	margin-left: auto;
 	margin-right: auto;
 }
 
-td#prred {
+td#prred {						/*da color rojo a las celdas de la primera tabla*/
 	background-color: red
 }
 
-td#prblue {
+td#prblue {						/*da color azul a las celdas de la primera tabla*/
 	background-color: blue
 }
 
-td#pryellow {
+td#pryellow {					/*da color naranja a las celdas de la primera tabla*/
 	background-color: orange
 }
 
-table#se, th#se, td#se {
+table#se, th#se, td#se {		/*centra y dimensiona la segunda tabla con el texto centrado*/
 	margin-left: auto;
 	margin-right: auto;
 	width: 250px;
 	text-align: center;
 }
 
-td#red {
+td#red {						/*da color rojo a las celdas de la segunda tabla*/
 	background-color: red
 }
 
-td#blue {
+td#blue {						/*da color azul a las celdas de la segunda tabla*/
 	background-color: blue
 }
 
-td#yellow {
+td#yellow {						/*da color naranja a las celdas de la segunda tabla*/
 	background-color: orange
 }
 
 </style>
 </head>
 <body>
-	<h1>Tableros de juego</h1>
-	<h2>Tableros con menús de selección</h2>
-	<table id="pr">
+	<h1>Tableros de juego</h1>						<!--  título de la página -->
+	<h2>Tableros con menús de selección</h2>		<!--  título de la primera tabla -->
+	<table id="pr">									<!--  creo la primera tabla 
+																		<tr> crea filas y <td> columnas para cada fila,
+																		con el input correspondiente al formulario
+																		con las celdas de su correspondiente color-->
 		<tr id="pr">
 			<td id="pr"></td>
 			<th id="pr">A</th>
@@ -117,10 +120,15 @@ td#yellow {
 				</form>
 			</td>
 		</tr>
-	</table>
-	<h2>Tableros con botones en las casillas</h2>
+	</table>											<!--  fin de la primera tabla -->
+	
+	<h2>Tableros con botones en las casillas</h2>		<!--  título de la segunda tabla -->
 	<form>
-		<table id="se">
+		<table id="se">									<!--  creo la primera tabla 
+																		<tr> crea filas y <td> columnas para cada fila,
+																		con el correspondiente radio button
+																		 y el input correspondiente de envio,
+																		con las celdas de su correspondiente color-->
 			<tr>
 				<td id="se"></td>
 				<th id="se">A</th>
@@ -156,7 +164,7 @@ td#yellow {
 				<td id="se"><input type="radio" name="posicion" value="C4"></td>
 				<td id="yellow"><input type="radio" name="posicion" value="D4"></td>
 			</tr>
-		</table>
+		</table>										<!--  fin de la segunda tabla -->
 		<input type="submit" name="enviar" value="Enviar">
 	</form>
 </body>
